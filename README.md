@@ -1,1 +1,1 @@
-# kaminari_for_scrubs
+Kaminari For Scrubs
