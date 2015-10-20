@@ -1,0 +1,8 @@
+<h1>Kaminari</h1>
+<%= paginate @users %>
+<% @users.each do |u| %>
+	<p> First Name: <%= u.first_name %></p>
+	<p> Last Name: <%= u.last_name %></p>
+	<p> Age: <%= u.age %></p>
+	<br>
+<%end%>
