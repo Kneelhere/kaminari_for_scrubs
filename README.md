@@ -28,7 +28,7 @@ Grabs the 6th page of users while populating 50 users on that page. Without per 
 Sometimes you're going to need to pad a number of records that is not a multiple of the page size.
 <pre>User.page(7).per(50).padding(3)</pre>
 
-Notes&tips: 
+<h2>Notes&tips: </h2>
 per is a method defined on the page scope, while
 padding is a method defined on the per scope.
 You can edit the paginator through config/locales/en.yml 
