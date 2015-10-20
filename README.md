@@ -16,19 +16,19 @@ Next go to your index view or whatever page you are trying to display the inform
 <pre> <%= paginate @users %> </pre>
 
 There are three scopes you are able to use:
-1.The <pre>page</pre> scope
+1.The page scope
 <pre>User.page(7)</pre>
 This helps you grab the 6th page of users
 
-2.The <pre>per</pre> scope
+2.The per scope
 <pre>User.page(7).per(50)</pre>
 Grabs the 6th page of users while populating 50 users on that page. Without <pre>per</pre> it defaults to 25.
 
-3.The <pre>padding</pre> scope
+3.The padding scope
 Sometimes you're going to need to pad a number of records that is not a multiple of the page size.
 <pre>User.page(7).per(50).padding(3)</pre>
 
 Notes: 
-<pre>per</pre> is a method defined on the page scope, while
-<pre>padding</pre> is a method defined on the per scope.
+per is a method defined on the page scope, while
+padding is a method defined on the per scope.
 
